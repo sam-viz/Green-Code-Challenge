@@ -37,6 +37,8 @@
 						caption.text($('#slideshow_tabs .currentSlide figcaption').text());
 					}
 				});
+
+				
 			});
 		</script>
 		<style type="text/css">
@@ -81,18 +83,29 @@ left: -2px;
 				
 				width: 100%;
 				z-index: 10;
+				background-color: white;
+				padding-top: 4px;
 			}
 
 			.slideshow .slideTabs a {
+				display: inline-block;
+				width:25px;
+			height:20px;
+			vertical-align: baseline;
 				padding: 10px;
-				margin: 0 5px;
+				margin: 0 2px;
 				
-				background: url(img/dot_white.png) no-repeat center center;
-				opacity: 0.6;
+				background:url("img/sprite-square-1.png") -15px -126px no-repeat;
+				
+				
 			}
 
 			.slideshow .slideTabs a.selected {
-				opacity: 1;
+				display: inline-block;
+				width:25px;
+	height:20px;
+				background:url("img/sprite-square-1.png") -69px -126px no-repeat;
+				
 			}
 
 			.slideshow .prev,
@@ -174,7 +187,7 @@ left: -2px;
                                                                 </div>
 <div class="container">
 <div class="row">
-<div id="slideshow">
+<div id="slideshowglobal">
 <div id="slideContainer">
 <div id="slideinner">
 <div id="slideshow_tabs" class="slideshow">
