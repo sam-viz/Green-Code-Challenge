@@ -1,0 +1,120 @@
+#slideinnerImage{
+	
+	width: 900px;
+height: 360px;
+background-color: #d9d9d9;
+position: absolute;
+left: 5px;
+
+}
+
+#image1,#image2,#image3{
+	background-color: yellow;
+	width:50px;
+	height:50px;
+
+}
+#image1{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background:url("../img/sprite-square-1.png") 0 0 no-repeat;
+
+	
+}
+
+#image2{
+	position: absolute;
+	top: 155px;
+	background:url("../img/sprite-square-1.png") -55px -54px no-repeat;
+}
+
+
+#image3{
+	position: absolute;
+	top:155px;
+	right:0px;
+	background:url("../img/sprite-square-1.png") 0 -54px no-repeat;
+
+}
+#slideshow{
+ 	width:920px;
+ 	
+ 	background-color: #d9d9d9;
+ 	height: 435px;
+ 	padding-top: 5px;
+ 	margin: auto;
+
+}
+#caption{
+	width: 904px;
+height: 25px;
+background-color: #ffffff;
+position: absolute;
+bottom: 5px;
+box-shadow: 2px 2px 1px #888890;
+
+}
+
+#slideinner{
+	
+	height: 389px;
+width: 910px;
+position: relative;
+
+margin: auto;
+}
+#slideScores{
+	position: relative;
+width: 904px;
+height: 30px;
+margin-top: 3px;
+}
+#score{
+	position: absolute;
+	left: 13px;
+}
+#posImage{
+	
+height: 20px;
+background-color: white;
+position: absolute;
+right: 0px;
+
+}
+#posImage>ul{
+	list-style: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+
+#posImage .position{
+	background:url("../img/sprite-square-1.png") -15px -126px no-repeat;
+	width:25px;
+	height:20px;
+	display: inline-block;
+
+}
+
+#posImage .selectedPos{
+	background:url("../img/sprite-square-1.png") -69px -126px no-repeat;
+	width:25px;
+	height:20px;
+	display: inline-block;
+
+}
+.bottomEnd{
+ display: inline-block;
+}
+.rightAlign{
+	right:0px;
+	position:absolute;
+	}
+
+#slideContainer{
+	width: 912px;
+	padding: 3px;
+	background-color: white;
+	margin:auto;
+}
