@@ -26,8 +26,8 @@ function Slideshow(slideshow_options) {
 		transition_delay: 500,
 		preload_images: true,
 		loop: true,
-		variableHeight: true,
-		variableWidth: true,
+		variableHeight: false,
+		variableWidth: false,
 		role : '',
 		loader_image : 'img/loader.gif',
 		multiple_slides: false,
@@ -70,6 +70,21 @@ function Slideshow(slideshow_options) {
 		return slide.count;
 	};
 
+
+	this.toggleSlideShow=function () {
+  		if (!options.autoplay) {
+    		
+    		enable_autoplay();
+    		options.autoplay =true;
+    	}
+  		else {
+  			
+    	disable_autoplay();
+    	 options.autoplay =false;           
+  		}
+  		
+  		
+	};
 	//preload images
 	(function() {
 		$slideshow.addClass('loading');

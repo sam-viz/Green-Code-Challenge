@@ -7,3 +7,177 @@ body{
 .glc-navbar a{
     color: #000;
 }
+#slideshowglobal{
+ 	width:920px;
+ 	
+ 	background-color: #d9d9d9;
+ 	height: 435px;
+ 	padding-top: 5px;
+ 	margin: auto;
+
+}
+#caption{
+	width: 904px;
+	height: 25px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 5px;
+	box-shadow: 2px 2px 1px #888890;
+}
+
+#slideinner{
+	
+	height: 389px;
+	width: 910px;
+	position: relative;
+	margin: auto;
+}
+
+.bottomEnd{
+ display: inline-block;
+}
+.rightAlign{
+	right:0px;
+	position:absolute;
+	}
+
+#slideContainer{
+	width: 912px;
+	padding: 3px;
+	background-color: white;
+	margin:auto;
+}
+.slideshow.loading .wrapper {
+	background: url("../img/loader.gif") no-repeat center center;
+	padding: 50px 0;
+}
+
+.slideshow.loading .slides {
+	display: none;
+}
+
+/* do not show slides during loading */
+.slideshow.loading .slide {
+	visibility: hidden;
+}
+
+.slideshow .wrapper {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.slideshow .slides {
+	position: absolute;
+}
+
+.slideshow .slide {
+	position: absolute;
+}
+
+.slideshow .prev,
+.slideshow .next {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.slideshow {
+	position: relative;
+	width: 900px;
+	height: 360px;
+	background-color: #d9d9d9;
+	
+	left: 5px;
+}
+
+.slideshow .slide figure {
+	position: relative;
+	margin: 0;
+}
+
+.slideshow .slide figure img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slideshow .slide figcaption {
+	display: none;
+}
+
+.slideshow .slideshow_caption {
+	
+	width: 904px;
+	height: 25px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 1px #888890;	
+	padding: 5px;
+	position: relative;
+	left: -2px;
+}
+
+.slideshow .slideTabs {
+	text-align: right;
+	
+	width: 100%;
+	z-index: 10;
+	background-color: white;
+	padding-top: 4px;
+}
+
+.slideshow .slideTabs a {
+	display: inline-block;
+	width:25px;
+	height:20px;
+	vertical-align: baseline;
+	padding: 10px;
+	margin: 0 2px;
+	
+	background:url("../img/sprite-square-1.png") -15px -126px no-repeat;
+	
+	
+}
+
+.slideshow .slideTabs a.selected {
+	display: inline-block;
+	width:25px;
+	height:20px;
+	background:url("../img/sprite-square-1.png") -69px -126px no-repeat;
+	
+}
+
+.slideshow .prev,
+.slideshow .next, .slideshow .controle {
+	position: absolute;
+	cursor: pointer;
+	padding: 0 3%;
+}
+
+.slideshow .prev {
+	left: 0;
+	width:55px;
+	height:54px;
+	background:url("../img/sprite-square-1.png") -55px -54px no-repeat;
+}
+
+.slideshow .controle {
+	position:absolute;
+	right: 5px;
+	top: 5px;
+	width:55px;
+	height:54px;
+	
+}
+.controle.play{
+	background:url("../img/sprite-square-1.png") 0px 0px no-repeat;
+}
+.controle.pause{
+	background:url("../img/sprite-square-1.png") -55px 0px no-repeat;
+}
+
+
+.slideshow .next {
+	right: 0;
+	width:55px;
+	height:54px;
+	background:url("../img/sprite-square-1.png") 2px -54px no-repeat;
+}
