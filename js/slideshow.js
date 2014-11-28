@@ -18,7 +18,7 @@ function Slideshow(slideshow_options) {
 		autoplay_start_delay : 0,
 		callback: null,
 		displayTime: 3000,
-		easing: 'swing',
+		easing: jQuery.easing['easeInCirc'],
 		id: null,
 		startingSlideNumber: 1,
 		visibleSlidesCount: 1,
@@ -84,6 +84,40 @@ function Slideshow(slideshow_options) {
   		}
   		
   		
+	};
+	this.stopSlide=function(){
+		if(options.autoplay){
+			disable_autoplay();
+			options.autoplay =false;
+		}
+	};
+	this.runSlide=function(){
+		if(!options.autoplay){
+			enable_autoplay();
+			options.autoplay =true;
+		}
+	};
+
+	this.handleInMouse=function(){
+
+		if($('.controle').hasClass('pause')){
+			$('.controle').removeClass('pause');
+			$('.controle').addClass('play');
+			this.stopSlide();
+		}
+
+	};
+
+	this.handleOutMouse=function(){
+		
+		if($('.controle').hasClass('play')){
+			$('.controle').removeClass('play');
+			$('.controle').addClass('pause');
+		this.runSlide();
+		}
+		
+		
+
 	};
 	//preload images
 	(function() {
@@ -187,6 +221,7 @@ function Slideshow(slideshow_options) {
 	function setClickHandlersForSlideshowButtons() {
 		$slideshow.on('click', '.prev, .next', function(e) {
 			e.preventDefault();
+			
 			if ($(this).hasClass('disabled')) return;
 
 			disable_autoplay();
